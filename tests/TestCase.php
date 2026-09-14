@@ -2,17 +2,17 @@
 
 declare(strict_types=1);
 
-namespace VendorName\Skeleton\Tests;
+namespace LaravelRecommender\Recommender\Tests;
 
+use LaravelRecommender\Recommender\RecommenderServiceProvider;
 use Orchestra\Testbench\TestCase as Orchestra;
-use VendorName\Skeleton\SkeletonServiceProvider;
 
 abstract class TestCase extends Orchestra
 {
     protected function getPackageProviders($app): array
     {
         return [
-            SkeletonServiceProvider::class,
+            RecommenderServiceProvider::class,
         ];
     }
 }
